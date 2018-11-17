@@ -1,7 +1,9 @@
-# Замена работающего linux на HIVE OS
+# Замена работающего Linux на HIVE OS
 
 запуск
-
+```
+curl https://raw.githubusercontent.com/lexandr0s/hive_replace/master/hive-replace > /tmp/hive-replace && bash /tmp/hive-replace
+```
 
 ## Краткие пояснения
 Минимум RAM: 4 Gb
