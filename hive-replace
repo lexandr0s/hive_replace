@@ -14,7 +14,7 @@ thishive=0
 [[ $(uname -sr) == *hive* ]] && thishive=1
 
 #Prevent start from local console
-[[ ! -z $DISPLAY ]] && echo "Please, switch to text console (e.g. Alt+Ctrl+F2), and run it from there" && exit 1 ##Check run from GUI
+[[ $(tty) == *tty* || ! -z $DISPLAY ]] && echo "This script don't work in the local console. Exit" && exit 
 
 #Get root
 if [[ $(id -u) -ne 0 ]]; then
